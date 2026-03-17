@@ -55,7 +55,7 @@ footer {
 
 .navbar {
   width: 100%;
-  padding: 15px 80px; /* scooches everything inward */
+  padding: 15px 20px; /* scooches everything inward */
   display: flex;
   justify-content: space-between;
   align-items: center;

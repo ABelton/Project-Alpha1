@@ -69,8 +69,11 @@ body {
 /* CONTENT ON TOP */
 .content-layer {
     position: relative;
-    z-index: 5; /* top layer */
+    z-index: 5;
+    padding-top: 120px; /* FIXES THE ENTIRE LAYOUT */
+    padding-bottom: 60px; /* keeps footer clean */
 }
+
 
 /* Content styling */
 .player-overlay {

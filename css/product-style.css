@@ -55,10 +55,10 @@ footer {
 
 .navbar {
   width: 100%;
-  padding: 15px 25px;
+  padding: 15px 40px; /* scooches everything inward */
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
   background: #111;
   color: #fff;
   position: sticky;
@@ -66,6 +66,11 @@ footer {
   z-index: 1000;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* scooch between Store + Contact */
+}
 
 .nav-link {
   color: #fff;
@@ -79,11 +84,6 @@ footer {
   opacity: 0.6;
 }
 
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 25px; /* <-- this is the scooch */
-}
 
 .nav-right a {
   color: #fff;

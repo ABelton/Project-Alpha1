@@ -84,6 +84,12 @@ footer {
   opacity: 0.6;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-right: 40px; /* <-- THIS pulls them inward */
+}
 
 .nav-right a {
   color: #fff;

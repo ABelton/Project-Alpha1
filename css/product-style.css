@@ -77,9 +77,20 @@ footer {
   opacity: 0.6;
 }
 
-.nav-right a {
-  margin-left: 20px;
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px; /* <-- this is the scooch */
 }
+
+.nav-right a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s ease;
+}
+
 .hero-images {
     display: flex;
     justify-content: center;

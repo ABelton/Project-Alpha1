@@ -36,18 +36,43 @@
         Available now in limited physical edition.
       </p>
 
-      <form class="purchase-form">
-        <label for="format">Choose your edition:</label>
-        <select id="format" name="format">
-          <option value="standard">Standard Edition — $25</option>
-          <option value="signed">Signed Edition — $35</option>
-        </select>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 
-        <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" name="quantity" min="1" value="1" />
+  <!-- REQUIRED PAYPAL FIELDS -->
+  <input type="hidden" name="cmd" value="_cart">
+  <input type="hidden" name="business" value="onesoundhousepublishing@outlook.com">
+  <input type="hidden" name="currency_code" value="USD">
+  <input type="hidden" name="add" value="1">
 
-        <button type="submit">Add to Cart</button>
-      </form>
+  <!-- PRODUCT NAME -->
+  <input type="hidden" name="item_name" value="Two Worlds One Soul — CD Edition">
+
+  <!-- EDITION DROPDOWN -->
+  <label for="format">Choose your edition:</label>
+  <select id="format" name="os0">
+    <option value="Standard Edition">Standard Edition — $25</option>
+    <option value="Signed Edition">Signed Edition — $35</option>
+  </select>
+
+  <!-- QUANTITY -->
+  <label for="quantity">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+  <!-- PRICE OPTIONS (PayPal requires this format) -->
+  <input type="hidden" name="option_select0" value="Standard Edition">
+  <input type="hidden" name="option_amount0" value="25.00">
+
+  <input type="hidden" name="option_select1" value="Signed Edition">
+  <input type="hidden" name="option_amount1" value="35.00">
+
+  <input type="hidden" name="option_index" value="0">
+
+  <!-- BUTTON -->
+  <button type="submit">Add to Cart</button>
+
+</form>
+
+
 
       <p class="shipping">Ships within 5–7 business days via USPS Media Mail.</p>
     </section>

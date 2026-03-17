@@ -63,4 +63,34 @@ footer {
   color: #555;
   text-align: center;
   margin-top: 40px;
+
+  .navbar {
+  width: 100%;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.6;
+}
+
+.nav-right a {
+  margin-left: 20px;
+}
+
 }
